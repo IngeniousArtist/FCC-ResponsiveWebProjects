@@ -1,0 +1,68 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeCodeCamp Survey</title>
+</head>
+<body>
+    <h1 id="title">FreeCodeCamp Survey</h1>
+    <p id="description">An example survey to help us complete the coursework.</p>
+
+    <form action="" id="survey-form">
+        <div id="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            
+            <label for="number" id="number-label">Number</label>
+            <input type="number" name="number" id="number" min=0 max=10 placeholder="Enter a number between 0 to 10"required>
+
+            <label for="dropdown" id="dropdown-label">Are you employed?</label>
+            <div class="form-group">
+                <select id="dropdown" name="employed" required>
+                    <option disabled selected value>Yes or No</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            
+            <label for="radio" id="radio-label">Are you a student?</label>
+            <div>
+                <label for="radio"><input class="input-radio" type="radio" name="student" value="yes" id="radio" checked>Yes</label>
+                <label for="radio"><input class="input-radio" type="radio" name="student" value="no" id="radio">No</label>
+            </div>
+
+            <label for="checkbox" id="checkbox-label">Which projects have you completed?</label>
+            <div>
+                <label for="checkbox"><input type="checkbox" name="projects" value="tribute" id="checkbox">Tribute Page</label>
+                <label for="checkbox"><input type="checkbox" name="projects" value="survey" id="checkbox">Survey Page</label>
+                <label for="checkbox"><input type="checkbox" name="projects" value="doc" id="checkbox">Technical Documentation Page</label>
+                <label for="checkbox"><input type="checkbox" name="projects" value="portfolio" id="checkbox">Personal Portfolio Page</label>
+                <label for="checkbox"><input type="checkbox" name="projects" value="product" id="checkbox">Product Landing Page</label>
+            </div>
+
+            <label for="textarea" id="textarea-label">Comments</label>
+            <textarea class="input-textarea" name="textarea" id="textarea" cols="10" rows="6" placeholder="Anything you need to say?">
+            </textarea>
+
+            <input class="input-submit" id="submit" type="submit" value="Submit">
+
+        </div>
+    </form>
+    
+</body>
+</html>
